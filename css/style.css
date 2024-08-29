@@ -977,7 +977,7 @@ footer {
   }
 }
 .fondo-especial {
-  background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, transparent 100%), url("/images/cinema.jpg");
+  background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, transparent 100%), url("../images/cinema.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
