@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disfruta de las mejores películas y series en Cinefilo. Trailers, reseñas y mucho más.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cinefilo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cinefilo</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="page/peliculas.html">Películas</a></li>
+                <li><a href="page/series.html">Series</a></li>
+                <li><a href="page/coleccion.html">Colecciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="full-screen-background">
+        <h1>Hemos venido a ver cine</h1>
+    </section>
+
+    <section id="peliculas" class="scrollable-container">
+        <h1 class="title">Tráilers que debes ver</h1>
+        <button class="scroll-btn left-btn">&#9664;</button>
+        <div class="scroll-container">
+            <!-- Todas las tarjetas de películas están dentro de este único contenedor -->
+            <div class="card movie-card">
+                <img src="images/Dune2.jpg" alt="Dune: Parte 2">
+                <div class="card__content movie-info"></div>
+                <iframe loading="lazy" class="youtube-video" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/pMe_te9QUa0?enablejsapi=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:none;"></iframe>
+            </div>
+            <div class="card movie-card">
+                <img src="images/furiosa.jpg" alt="Furiosa Mad Max">
+                <div class="card__content movie-info"></div>
+                <iframe loading="lazy" class="youtube-video" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/BUvtEhcuavU?enablejsapi=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:nome;"></iframe>
+            </div>
+            <!-- Repetir la estructura de la tarjeta para cada película -->
+            <div class="card movie-card">
+                <img src="images/deadpool.jpg" alt="Deadpool y Wolverine">
+                <div class="card__content movie-info"></div>
+                <iframe loading="lazy" class="youtube-video" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/UzFZR2dRsSY?enablejsapi=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:nome;"></iframe>
+            </div>
+            <div class="card movie-card">
+                <img src="images/borderlands.jpg" alt="Borderlands">
+                <div class="card__content movie-info"></div>
+                <iframe loading="lazy" class="youtube-video" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/Zusyjsct4WA?enablejsapi=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:nome;"></iframe>
+            </div>
+            <div class="card movie-card">
+                <img src="images/Alien.jpeg" alt="Alien">
+                <div class="card__content movie-info"></div>
+                <iframe loading="lazy" class="youtube-video" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/29WFi-jo824?enablejsapi=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:nome;"></iframe>
+            </div>
+            <div class="card movie-card">
+                <img src="images/cazafantasmas.jpg" alt="Cazafantasmas">
+                <div class="card__content movie-info"></div>
+                <iframe loading="lazy" class="youtube-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/pK2ilo7tGPg?enablejsapi=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:nome;"></iframe>
+            </div>
+            <!-- Añade más tarjetas según sea necesario -->
+        </div>
+        <button class="scroll-btn right-btn">&#9654;</button>
+    </section>
+
+    <section id="series" class="scrollable-container">
+        <h1 class="title">Series</h1>
+        <button class="series-scroll-btn series-left-btn">&#9664;</button>
+        <div class="grid-container">
+            <a href="page/articulos/series/house.html" class="card-link">
+            <div class="card-new card-series-new" data-url="">
+                <img src="images/HOD.jpg" alt="House of The Dragon">
+                <div class="card-new__content">
+                    <p class="card-new__title">House Of The Dragón</p>
+                    <p class="card-new__description">La Casa del Dragón se centra en la casa Targaryen, sólo que 200 años antes que los hechos narrados en la ficción original. La familia Targaryen escapó de la destrucción de Valyria para asentarse en Rocadragón, desde donde Aegon I conquistó Poniente.</p>
+                </div>
+            </div>
+            </a>
+            <a href="page/articulos/series/darkmaterials.html" class="card-link">
+            <div class="card-new card-series-new">
+                <img src="images/hisdark.jpg" alt="His Dark Materials">
+                <div class="card-new__content">
+                    <p class="card-new__title">His Dark Materials</p>
+                    <p class="card-new__description">Lyra, una huérfana en un universo donde convergen ciencia, teología y magia, busca a un amigo secuestrado. Su aventura revela un complot sobre niños robados y la busca de entender el enigmático Dust.</p>
+                </div>
+            </div>
+            </a>
+            <a href="page/articulos/series/valhalla.html" class="card-link">
+            <div class="card-new card-series-new">
+                <img src="images/valhalla.jpg" alt="Vikings: Valhalla">
+                <div class="card-new__content">
+                    <p class="card-new__title">Vikings: Valhalla</p>
+                    <p class="card-new__description">En esta secuela de Vikingos, 100 años después, una nueva generación de héroes legendarios surge para forjar su destino y cambiar la historia.</p>
+                </div>
+            </div>
+            </a>
+            <a href="page/articulos/series/fallout.html" class="card-link">
+            <div class="card-new card-series-new">
+                <img src="images/fallout.jpg" alt="Fallout la serie">
+                <div class="card-new__content">
+                    <p class="card-new__title">Fallout</p>
+                    <p class="card-new__description">La serie ocurre 200 años después del apocalipsis, donde los habitantes de los refugios nucleares de lujo deberán salir nuevamente a la superficie y se encontrarán un universo complejo, alegremente raro y, sobre todo, extremadamente violento, el cual probará las habilidades de supervivencia de cada uno.</p>
+                </div>
+            </div>
+            </a>
+            <a href="page/articulos/series/acolyte.html" class="card-link">
+            <div class="card-new card-series-new">
+                <img src="images/acolyte.jpg" alt="Star Wars: The Acolyte">
+                <div class="card-new__content">
+                    <p class="card-new__title">The Acolyte</p>
+                    <p class="card-new__description">Cien años antes del alzamiento del Imperio, la Orden Jedi y la República Galáctica gozan de prosperidad tras siglos sin guerras. Pero ahora la investigación de una oleada de estremecedores crímenes enfrentará a un maestro jedi con una peligrosa guerrera de su pasado.</p>
+                </div>
+            </div>
+            </a>
+            <a href="page/articulos/series/witcher.html" class="card-link">
+            <div class="card-new card-series-new">
+                <img src="images/witcher.jpg" alt="The Withcer">
+                <div class="card-new__content">
+                    <p class="card-new__title">The Withcer</p>
+                    <p class="card-new__description">Los peores monstruos son los que nosotros mismos creamos Geralt, un brujo que se dedica a cazar monstruos genéticamente modificados, busca su lugar en un mundo donde a menudo los humanos demuestran ser peores que las bestias.</p>
+                </div>
+            </div>
+            </a>
+        </div>
+        <button class="series-scroll-btn series-right-btn">&#9654;</button>
+    </section>
+
+    <section id="retro-series" class="retro-scrollable-container">
+        <h1 class="title">Zona Retro</h1>
+        <button class="retro-scroll-btn retro-left-btn">&#9664;</button>
+        <a href="page/articulos/peliculas/et.html" class="card-link">
+        <div class="retro-grid-container">
+            <div class="retro-card retro-card-new">
+                <img src="images/et.jpg" alt="ET el Estraterrestre">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">ET el Extraterrestre</p>
+                    <p class="retro-card__description">Un pequeño extraterrestre de otro planeta queda abandonado en la Tierra cuando su nave se olvida de él. Está completamente solo y asustado hasta que Elliott, un niño de nueve años, lo encuentra y decide esconderlo en su casa para protegerlo. El chico y sus hermanos intentarán encontrar la forma de devolver al extraterrestre a su planeta antes de que lo encuentren los científicos y la policía.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/titanic.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/titanic.jpg" alt="Titanic">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">Titanic</p>
+                    <p class="retro-card__description">Jack es un joven artista que gana un pasaje para viajar a América en el Titanic, el transatlántico más grande y seguro jamás construido. A bordo del buque conoce a Rose, una chica de clase alta que viaja con su madre y su prometido Cal, un millonario engreído a quien solo interesa el prestigio de la familia de su prometida. Jack y Rose se enamoran a pesar de las trabas que ponen la madre de ella y Cal en su relación. Mientras, el lujoso transatlántico se acerca a un inmenso iceberg.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/mision.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/mi.jpg" alt="Misión Imposible">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">Misión Imposible</p>
+                    <p class="retro-card__description">Ethan Hunt es un espía capaz de llevar a cabo las misiones más peligrosas con la máxima eficacia. Ahora debe participar en una dificilísima misión: evitar la venta de un disco robado que contiene información secreta de importancia vital.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/matrix.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/matrix.jpg" alt="Matrix">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">Matrix</p>
+                    <p class="retro-card__description">El programador informático Thomas Anderson, más conocido en el mundo de los "hacker" como Neo, está en el punto de mira del temible agente Smith. Otros dos piratas informáticos, Trinity y Morfeo, se ponen en contacto con Neo para ayudarlo a escapar. Matrix te posee. Sigue al conejo blanco.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/mascara.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/mascara.jpg" alt="La Mascara">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">La Mascara</p>
+                    <p class="retro-card__description">Un aburrido empleado de banca encuentra una máscara que representa a Loki, un dios de la malicia y la travesura, la cual le transformará por completo.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/soloencasa.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/soloencasa.jpg" alt="Solo en Casa 2">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">Solo en Casa 2</p>
+                    <p class="retro-card__description">En plenas navidades, Kevin y su familia están a punto de coger un avión para pasar unas pequeñas vacaciones. Sin embargo, Kevin se equivoca y embarca en un avión a Nueva York. Cuando llega a la gran ciudad, lejos de sentirse solo y desprotegido, Kevin reserva una habitación en un lujoso hotel con la tarjeta de crédito de su padre y se hace amigo de un sin techo.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/godzilla.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/godzilla.jpg" alt="Godzilla de 1998">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">Godzilla</p>
+                    <p class="retro-card__description">Las pruebas nucleares realizadas por los franceses en el Pacífico provocan la aparición en el océano de un gigantesco reptil mutante, que ha sido localizado tras atacar un barco de pesca japonés; ahora saldrá del océano para dirigirse a Nueva York.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/lamomia.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/lamomia.jpg" alt="La Momia">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">La Momia</p>
+                    <p class="retro-card__description">Rick O'Connell y un compañero descubren las ruinas de Hamunaptra. Después vuelven al mismo lugar con una egiptóloga y su hermano. Allí coinciden con un grupo de americanos que provocan la resurrección de la momia de un diabólico sacerdote egipcio.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/futuro.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/volver.jpg" alt="Volver al Futuro">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">Volver al Futuro</p>
+                    <p class="retro-card__description">El adolescente Marty McFly es amigo de Doc, un científico que ha construido una máquina del tiempo. Cuando los dos prueban el artefacto, un error fortuito hace que Marty llegue a 1955, año en el que sus padres iban al instituto y todavía no se habían conocido. Después de impedir su primer encuentro, Marty deberá conseguir que se conozcan y se enamoren, de lo contrario su existencia no sería posible.</p>
+                </div>
+            </div>
+        </a>
+        <a href="page/articulos/peliculas/starwars.html" class="card-link">
+            <div class="retro-card retro-card-new">
+                <img src="images/starwars.jpg" alt="Star Wars: Una nueva Esperanza">
+                <div class="retro-card__content">
+                    <p class="retro-card__title">Star Wars: Una nueva Esperanza</p>
+                    <p class="retro-card__description">La nave en la que viaja la princesa Leia es capturada por las tropas imperiales al mando del temible Darth Vader. Antes de ser atrapada, Leia consigue introducir un mensaje en su robot R2-D2, quien acompañado de su inseparable C-3PO logran escapar. Tras aterrizar en el planeta Tattooine son capturados y vendidos al joven Luke Skywalker, quien descubrirá el mensaje oculto que va destinado a Obi Wan Kenobi, maestro Jedi a quien Luke debe encontrar para salvar a la princesa.</p>
+                </div>
+            </div>
+        </a>
+        </div>
+        <button class="retro-scroll-btn retro-right-btn">&#9654;</button>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Cinefilo. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/card.js" defer></script>  
+    <script src="js/navbar.js" defer></script>
+</body>
+</html>

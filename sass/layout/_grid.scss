@@ -1,0 +1,21 @@
+.grid-container {
+    max-height: 500px; 
+    min-height: 300px;
+    width: 100%; 
+    border: none;
+    transition: none;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+    position: relative;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    overflow-x: auto; 
+
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

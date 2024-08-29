@@ -1,0 +1,117 @@
+header {
+    background: transparent; 
+    padding: 1rem 0;
+    transition: background-color 0.3s ease; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+        position: relative;
+
+        .logo {
+            font-family: "Monoton", sans-serif;
+            color: #b02000;
+            font-size: 2em;
+            font-weight: bold;
+            margin-right: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    color: #f0f0f0;
+                }
+            }
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 2em; 
+            width: 2em;
+
+            span {
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-color: white;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+                position: absolute;
+                top: 10px; 
+                right: 10px; 
+            }
+
+            ul {
+                display: none; 
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                padding: 0;
+                transition: left 0.3s ease; 
+
+                li {
+                    text-align: center;
+                    padding: 10px 0;
+                    width: 100%;
+                }
+
+                a {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.scrolled {
+    background-color: #000; 
+}
+
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        padding: 0 5%;
+        align-items: center;
+
+        .logo {
+            margin-bottom: 1rem; 
+            align-items: center;
+            padding-left: 25px;
+        }
+
+        ul {
+            flex-direction: column;
+            width: 100%;  
+            text-align: center;
+
+            li {
+                padding: 10px 0;
+            }
+        }
+    }
+}

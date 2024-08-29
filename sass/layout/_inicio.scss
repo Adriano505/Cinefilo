@@ -1,0 +1,49 @@
+.full-screen-background {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0) 0%, rgb(0, 0, 0) 100%), url('/images/fon.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+    h1 {
+        font-family: "Monoton", sans-serif;
+        color: #bd2300;
+        font-size: 3em; // Tamaño original de la fuente
+        padding: 20px;
+
+        @media (max-width: 768px) {
+            font-size: 2em; // Tamaño de fuente ajustado para pantallas más pequeñas
+            padding: 10px; // Menos padding para asegurar que el texto no sea demasiado grande
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.5em; // Tamaño de fuente más pequeño para dispositivos muy pequeños
+        }
+    }
+}
+
+#peliculas, #series, #retro-series {
+    @media (max-width: 768px) {
+        margin-top: 20px; // Espacio reducido para pantallas más pequeñas
+        margin-bottom: 20px;
+        padding-bottom: 1%; // Reducción del padding para mantener la proporción en pantallas pequeñas
+    }
+}
+
+#peliculas {
+    margin-bottom: 50px; // Espacio después de la sección de películas
+    padding-bottom: 2%;
+}
+
+#series {
+    margin-top: 50px; // Espacio antes de la sección de series
+    padding-bottom: 2%;
+}
+
+#retro-series {
+    margin-top: 50px; // Espacio antes de la sección de series retro
+    padding-bottom: 2%;
+}
