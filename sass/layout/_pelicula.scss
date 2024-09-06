@@ -1,115 +1,221 @@
 #peliculas-retro {
-    margin-top: 50px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 
-    .peliculas-grid-container {
-        display: flex;
-        overflow-x: auto;
-        gap: 20px;
-        padding: 20px;
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
-        scroll-behavior: smooth;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    }
-
-    .peliculas-title {
-        font-family: "Monoton", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        color: #b02000;
-        font-size: 36px;
-        margin-top: 20px; // Ajusta según sea necesario
-        margin-bottom: 20px; // Ajusta según sea necesario
-        text-align: center;
-      }
-
-    .peliculas-card {
-        width: 300px;
-        min-width: 300px;
-        height: 400px;
-        margin-right: 20px;
-        transition: all .5s;
-        box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
-                    -15px -15px 30px rgba(60, 60, 60, 0.082);
-        text-align: center;
-        overflow: hidden;
-        position: relative;
-        background-color: #fff;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: all .5s ease;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        &:hover {
-            height: 420px;
-            img {
-                transform: scale(1.1);
-            }
-        }
-
-        .peliculas-card__content {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            background: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            transform: translateY(100%);
-            transition: transform .5s ease-in-out, opacity .5s ease;
-            opacity: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-    }
-
-    .peliculas-scroll-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.6);
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    .peliculas-left-btn {
-        left: 10px;
-    }
-
-    .peliculas-right-btn {
-        right: 10px;
-    }
-
-    @media (max-width: 768px) {
-      .peliculas-scroll-btn {
-          // Opción 1: Ocultar completamente
+  .peliculas-grid-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
           display: none;
-
-          // Opción 2: Desvanecer (descomentar para usar)
-          // opacity: 0;
-          // visibility: hidden;
       }
   }
+
+  .peliculas-title {
+      @include monoton-font(36px);  // Se aplica el mixin aquí
+      margin-top: 20px; // Ajusta según sea necesario
+      margin-bottom: 20px; // Ajusta según sea necesario
+  }
+
+  .peliculas-card {
+      width: 300px;
+      min-width: 300px;
+      height: 400px;
+      margin-right: 20px;
+      transition: all .5s;
+      box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+                  -15px -15px 30px rgba(60, 60, 60, 0.082);
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      background-color: #fff;
+
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all .5s ease;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }
+
+      &:hover {
+          height: 420px;
+          img {
+              transform: scale(1.1);
+          }
+      }
+
+      .peliculas-card__content {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          background: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          transform: translateY(100%);
+          transition: transform .5s ease-in-out, opacity .5s ease;
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+
+  .peliculas-scroll-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      z-index: 10;
+  }
+
+  .peliculas-left-btn {
+      left: 10px;
+  }
+
+  .peliculas-right-btn {
+      right: 10px;
+  }
+
+  @media (max-width: 768px) {
+      .peliculas-scroll-btn {
+          display: none;
+      }
+  }
+}
+
+.movie-section {
+  .container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 20px;
+      padding-top: 100px;
+      color: white;
+      background-color: black;
+
+      h2 {
+          @include monoton-font(50px, #b02000);  // Se aplica el mixin aquí
+          padding-left: 10px;
+          margin-bottom: 10px;
+          margin-top: 20px;
+          text-align: left;  // Ajuste personalizado
+      }
+
+      .movies-scroll-wrapper {
+          overflow: hidden;
+      }
+
+      img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 3; // This makes the image cover the number
+      }
+
+      .movies-scroll {
+          display: flex;
+          overflow-x: auto;
+          padding: 10px;
+          scroll-behavior: smooth;
+
+          -ms-overflow-style: none; // No scrollbar for IE and Edge
+          scrollbar-width: none; // No scrollbar for Firefox
+
+          &::-webkit-scrollbar {
+              display: none; // No scrollbar for Chrome, Safari, Opera
+          }
+      }
+
+      .cardio {
+          position: relative;
+          flex: 0 0 auto;
+          width: 240px; // Aumentado de 200px a 240px
+          height: 360px; // Aumentado de 300px a 360px para mantener una proporción de 2:3
+          margin-right: 10px;
+          background-color: #222;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+          overflow: hidden; // Asegúrate de que cualquier contenido extra no se desborde
+
+          img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; // Asegura que las imágenes cubran completamente el espacio sin deformarse
+          }
+      }
+
+      .nav-btn {  // Actualizado de scroll-btn a nav-btn
+          position: absolute;
+          top: 60%;
+          transform: translateY(-50%);
+          background-color: #050c13;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 24px;
+          z-index: 10;
+
+          &.left-slide {
+              left: 10px;
+          }
+      
+          &.right-slide {
+              right: 10px;
+          }
+
+          &:hover {
+              background-color: darken(#007BFF, 10%);
+          }
+
+          @media (max-width: 768px) {
+              .container .nav-btn {
+                  display: none;
+              }
+          }
+      }
+  }
+}
+
+.showcase {
+  padding-top: 40px;
+  padding-left: 10px;
+  display: block;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.recommended {
+  @include monoton-font(40px);  // Se aplica el mixin aquí
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .movie-section {

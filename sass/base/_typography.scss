@@ -5,3 +5,10 @@ body {
     
 }
 
+@mixin monoton-font($size, $color: #b02000) {
+    font-family: "Monoton", sans-serif;
+    font-style: normal;
+    color: $color;
+    font-size: $size;
+    text-align: center;
+  }
